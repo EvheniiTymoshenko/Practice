@@ -8,7 +8,7 @@ function sumNumbers(...numbers) {
   }
   sumNumbers(4, 5);
   sumNumbers(4, 5, 6, 1);
-  sumNumbers(4, 5, 10, 2, 3);
+   sumNumbers(4, 5, 10, 2, 3);
 
 //Return first half of string
 function myFunction1(a){
@@ -135,7 +135,7 @@ myFunction23('1234567','.');
 // myFunction23('zxyzxyzxyzxyzxyz','w');
 
 //Index from string to arr
-function myFunction24(str){
+function myFunction241(str){
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 let getIndex = [];
 for (let i = 0; i < str.length; i++){
@@ -143,13 +143,14 @@ for (let i = 0; i < str.length; i++){
  getIndex.push(alphabet.indexOf(item) + 1);
 }
   }
-myFunction24('bnchmf');
+myFunction241('bnchmf');
 
 
 //Write a function that takes a string as argument. As it is, the string has no meaning. 
 // Increment each letter to the next letter in the alphabet. Return the correct word
-function myFunction(str) {
+function myFunction24(str) {
   const arr = [...str];
   const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
   return correctedArray.join('');
 }
+myFunction24('bnchmf');
